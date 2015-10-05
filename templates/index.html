@@ -1,0 +1,38 @@
+<!doctype html>
+<title>Amazon Recommendation Helper</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+  <h1>Amazon Recommendation Helper</h1>
+  <div class=metanav>
+
+<h4>
+Please enter the ASIN of an Amazon product, for example B00747YRWO. <br />
+</h4>
+
+<form id='user_input' method='post' action='check_plot' > <!-- action is the URL you want to move to next-->
+   <p>
+   ASIN <input type='text' name='ASIN'/>
+    <br \>
+   Max number of products shown <input type='text' name='maxn'/>
+    <br \>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+      
+
+<p style="text-align:left">
+    <br>
+    <br>
+    Notice:<br>
+        1.Amazon books and videos are not supported currently.<br>
+        2.It may take several minutes to generate result if the max number is greater then 50. The default value is 10.<br>
+    <br/>
+    <br/>
+</p>
+<p>
+    By Yi Gao, Northwestern University
+</p>
+
+</div>
+</div>

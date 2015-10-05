@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <title>Result</title>
+        
+        <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.css" type="text/css" />
+        <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.js"></script>
+        {{ script_|indent(4)|safe }}
+
+       
+
+    </head>
+    <h1>
+        {{maxn}} Related products of <u>{{prod_name}} ({{asin}})</u>
+    </h1>
+    <br \>
+    <h3>
+        About the Graphs:
+    </h3>
+    <p>
+        The left graph is a network generated based on Amazon recommedations. On the right, average rating is plotted against number of reviews. The red node is the original product, and the yellow ones are related products. The size of a node is decided by how many times this product is recommended from others. Products with most reviews and highest rating are indicated by purple and orange circles respectively.
+        
+    </p>
+    
+    <h3>
+        Graph tools:
+    </h3>
+    <p>
+        You can select tools on the left to interact with the plot and obtain more information.
+    </p>
+    <ul>
+        <li>Pan: This allows you to pan the plot by left-dragging a mouse across the plot regions. </li>
+        <li>Lasso Select: You are able to highlight nodes in one graph, and the corresponding nodes in the other graph will also be highlighted.</li>
+        <li>Box Zoom: This allows you to zoom in a box area to get more detailed information.</li>
+        <li>Resize: This tool allows you adjust the size of the graph by left-dragging</li>
+    </ul>  
+    <p>
+        Additionally, you are able to check product information by moving your mouse on the node, and open a product's webpage by clicking the node.
+    </p>
+    
+    <h3>
+        Enjoy!
+        <br>
+        <a href='/index'> Back </a>
+    </h3>
+    <body>
+        {{ div_|indent(4)|safe }}
+    </body>
+</html>
